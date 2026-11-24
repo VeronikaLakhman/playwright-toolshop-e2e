@@ -20,4 +20,15 @@ export class HomePage {
         await this.searchInput.fill(name);
         await this.searchButton.click();
     }
+
+    getCategoryCheckbox(category) {
+        return this.page.getByRole('checkbox', {
+            name: category,
+            exact: true,
+        });
+    }
+
+    async filterByCategory(category) {
+        await this.getCategoryCheckbox(category).check();
+    }
 }

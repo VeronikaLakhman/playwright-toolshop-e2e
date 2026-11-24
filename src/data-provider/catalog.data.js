@@ -3,7 +3,13 @@ export const catalogData = {
     boltCutters: 'Bolt Cutters',
   },
 
-   searchQueries: {
+  searchQueries: {
     pliers: 'Pliers',
+  },
+
+  filters: {
+    categories: {
+      hammer: 'Hammer',
+    },
   },
 };
